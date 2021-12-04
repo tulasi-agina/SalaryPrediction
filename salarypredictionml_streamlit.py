@@ -1,4 +1,4 @@
-pip install matplotlib
+conda install matplotlib
 import streamlit as st
 import pandas as pd 
 from matplotlib import pyplot as plt
