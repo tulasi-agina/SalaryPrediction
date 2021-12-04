@@ -38,7 +38,7 @@ if nav == "Home":
         yaxis = dict(range=[0,2100000])
      )
      fig = go.Figure(data=go.scatter(x=data["YearsExperience"], y=data["Salary"],mode="marker"),layout =layout)
-    st.plotly_chart(fig)
+     st.plotly_chart(fig)
 
 if nav == "Prediction":
   st.header("Know your Salary")
