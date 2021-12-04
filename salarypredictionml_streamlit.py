@@ -70,7 +70,7 @@ if nav == "Contribute":
   sal = st.number_input("Enter your Salary:",0.00,1000000.00,step=1000.00)
 
   if st.button("submit"):
-    to_add = {"YearsExperience":ex,Salary":sal}
+    to_add = {"YearsExperience":ex,Salary":[sal]}
     to_add = pd.DataFrame(to_add)
     to_add.to_csv("/content/data/Salary_Data.csv",mode=a,header=False,index=False)
     st.success("Submitted")
