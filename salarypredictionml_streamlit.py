@@ -6,7 +6,7 @@ from sklearn.linear_model import LinearRegression
 import numpy as np 
 
 
-data = pd.read_csv("data//Salary_Data.csv")
+data = pd.read_csv("data//Salary_Data.csv",sep=",")
 x = np.array(data['YearsExperience']).reshape(-1,1)
 lr = LinearRegression()
 lr.fit(x,np.array(data['Salary']))
