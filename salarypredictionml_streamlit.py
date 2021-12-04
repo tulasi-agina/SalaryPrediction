@@ -1,5 +1,3 @@
-conda create -n streamlitpy39 -c conda-forge python=3.9 pyarrow=1.0 -y
-conda activate streamlitpy39
 pip install streamlit
 conda install matplotlib
 
