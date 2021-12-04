@@ -1,4 +1,3 @@
-pip install streamlit
 conda install matplotlib
 
 import streamlit as st
