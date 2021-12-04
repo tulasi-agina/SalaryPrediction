@@ -1,11 +1,20 @@
+conda create -n streamlitpy39 -c conda-forge python=3.9 pyarrow=1.0 -y
+conda activate streamlitpy39
+pip install streamlit
 conda install matplotlib
+
 import streamlit as st
-import pandas as pd 
+import pandas as pd
+import matplotlib
+matplotlib.use('Agg')
 from matplotlib import pyplot as plt
 from plotly import graph_objs as go
 from sklearn.linear_model import LinearRegression
 import numpy as np 
 
+# Sets the MPLBACKEND environment variable to Agg inside Streamlit to prevent Python crashing.
+# Default: true
+fixMatplotlib = true
 
 data = pd.read_csv("data//Salary_Data.csv")
 x = np.array(data['YearsExperience']).reshape(-1,1)
