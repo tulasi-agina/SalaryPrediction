@@ -13,7 +13,7 @@ lr.fit(x,np.array(data['Salary']))
 
 
 st.title("Salary Predictor")
-st.image("data//SalPred.png",width = 800)
+st.image("data//SalPred.jpg",width = 800)
 nav = st.sidebar.radio("Navigation",["Home","Prediction","Contribute"])
 if nav == "Home":
     
